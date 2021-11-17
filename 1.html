@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In dãy Fibonacci</title>
+</head>
+<body>
+    <script>
+        //Bài 1: In dãy Fibonacci
+        let number = parseInt(prompt('Nhập chiều dài dãy Fibonacci: '));
+        let a=0, b = 1, value;
+        for (let i = 0; i < number; i++) {
+            document.write(a + ", ");
+            value = a + b;
+            a = b;
+            b = value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ HCN</title>
+</head>
+<body>
+    <script>
+        let rong = 7, dai = 20;
+        for(let i = 1; i <= rong; i++){
+            for(let j = 1;j <= dai; j++){
+                if(i == 1 || j == 1 || i == rong || j == dai){
+                document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp");               
+                    }
+            }
+        document.write("<br>");
+        }
+    </script>
+</body>
+</html>

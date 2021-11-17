@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In hình tam giác vuông</title>
+</head>
+<body>
+    <script style="text-align: right;">
+        //Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
+        // let number = 5;
+        // for (let i = 1; i <=number;i++) {
+        //     for(let j = 0; j<i;j++) {
+        //         document.write('*');
+        //     }
+        //     document.write('<br>');
+        // }
+        
+        // let number = 0;
+        // for (let i = 5; i >number;i--) {
+        //     for(let j = 0; j<i;j++) {
+        //         document.write('*');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        // let number = 5;
+        // for (let i = 1; i <=number;i++) {
+        //     for (let j = 1; j <=number;j++) {
+        //         if(j<=number - i) {
+        //             document.write('&nbsp&nbsp');
+        //         } else {
+        //             document.write('*');
+        //         }
+        //     }
+        //     document.write('<br>');
+        // }
+
+        let number = 5;
+        for (let i = 1; i <=number;i++) {
+            for (let j = 10; j >number;j--) {
+                if(j>=number+i) {
+                    document.write('*');
+                } else if (j<number) {
+                    document.write('&nbsp');
+                } 
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

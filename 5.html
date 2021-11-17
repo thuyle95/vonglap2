@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            A = P(1 + r/n)^nt
+            p = số tiền ban đầu
+            r = lãi suất
+            n = số lần lãi nhập gốc/năm
+            t = số năm vay/mượn
+        */
+       let a = 0;
+       let p = parseInt(prompt('Nhập số tiền cần gửi: ', ''));
+       let r = parseInt(prompt('Nhập lãi suất: (%)',''));
+       let n = parseInt(prompt('Nhập số lần lãi nhập gốc/năm: ',''));
+       let t = parseInt(prompt('Nhập thời gian vay: (năm)'));
+       a = Math.pow(((r/n)+1),(n*t))*p;
+       document.write('Tổng số tiền bạn nhận được sau thời gian gửi là ' +' ' + a);
+
+    </script>
+</body>
+</html>
